@@ -1,0 +1,59 @@
+\documentclass[a4paper, 12pt]{report}
+
+
+% package
+\usepackage{kotex}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{wrapfig}
+\usepackage{longtable} % 테이블이 여러 페이지로 나눠지도록 지원하는 패키지 (선택 사항)
+\usepackage[table,xcdraw]{xcolor}  % 색상 적용을 위한 패키지
+\usepackage{titlesec}
+\usepackage{tocloft}
+
+
+% document setting
+\renewcommand{\figurename}{그림}    % 그림 캡션을 한글로 변경
+\renewcommand{\abstractname}{요약}  % 요약 제목을 한글로 변경
+\renewcommand{\contentsname}{목차}  % 목차 제목을 한글로 변경
+\renewcommand{\appendixname}{부록}  % 부록 제목을 한글로 변경
+\setstretch{1.50}                  % 줄 간격 설정
+\setlength{\parskip}{6pt}          % 문단 간격 설정
+\setlength{\parindent}{0pt}        % 문단 들여쓰기 제거
+\renewcommand{\arraystretch}{2.0} % 표 내 줄 간격을 1.5배로 설정
+\captionsetup{font=small}          % 캡션 폰트를 'small'로 설정
+\geometry{top=3cm, bottom=3cm, left=2.5cm, right=2.5cm}  % 여백 설정
+\titleformat{\chapter}[hang]{\normalfont\huge\bfseries}{제 \thechapter\ 장}{1em}{}
+\setlength{\cftbeforetoctitleskip}{0cm} % 목차 제목 위 여백
+
+\title{국가공공 정보시스템 안전성 및 활용성 제고를 위한 차세대 암호체계 개발 보고서}
+\author{김동현(Kim DongHyeon, wlswudpdlf31@kookmin.ac.kr)}
+\date{\today}
+
+\begin{document}
+
+
+\maketitle
+
+\input{abstract.tex}
+
+\tableofcontents
+
+\input{chapter_1_introduction.tex}
+\input{chapter_2_format.tex}
+\input{chapter_3_application.tex}
+\input{chapter_4_performance.tex}
+\input{chapter_5_conclusion.tex}
+
+\input{bibliography.tex}
+
+\appendix
+
+\input{appendix_a_code.tex}
+\input{appendix_b_trends.tex}
+
+
+\end{document}
