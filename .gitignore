@@ -1,1 +1,15 @@
+# directory
 arc
+imgs
+
+# file
+
+# doc file
+doc/*.aux
+doc/*.fls
+doc/*.log
+doc/*.out
+doc/*.tex
+doc/*.toc
+doc/*.gz
+doc/*.fdb_latexmk

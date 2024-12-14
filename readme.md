@@ -1,21 +1,19 @@
-# 컴파일 방법
+# 구조
 
-src 파일로 들어간 후, python3 chameleon.py
+파일 구조 설명
 
-# 모듈 설치
+# 소스코드 사용 방법
 
-import sys
-import numpy as np
-import tkinter as tk
-from PIL import Image, ImageTk, ImageGrab, ImageDraw
+소스코드 컴파일 및 실행 방법
 
-import time
-from datetime import datetime
+## Encoder
 
-import qrcode
+Encoder 내 파일 설명
 
-from Crypto.Cipher import AES
-from Crypto.Util.Padding import pad, unpad
-from Crypto.Random import get_random_bytes
-import hashlib
-import hmac
+## Attacker
+
+Attacker 내 파일 설명
+
+## Decoder
+
+Decoder 내 파일 설명
